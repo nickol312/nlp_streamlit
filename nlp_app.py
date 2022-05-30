@@ -19,7 +19,7 @@ trunc_type='post'
 padding_type='post'
 oov_tok = "<OOV>"
 
-model = load_model('Model/my_model.h5')
+model = load_model(r'model/my_model.h5')
 
 def welcome():
     return "Welcome All"
@@ -37,7 +37,7 @@ def main():
     result=""
     
     if st.button("Predict"):
-        st.text(sentence)
+        st.subheader(sentence)
         prediction = predict(sentence ,tokenizer, max_length, padding_type, trunc_type)
         
         if(prediction>0.5):
@@ -46,10 +46,6 @@ def main():
             result = "Negative"
         
     st.success('The output is {}'.format(result))
-    if st.button("About"):
-        st.text("Lets LEarn")
-        st.text("Built with Streamlit")
     
 if __name__=='__main__':
     main()
-    
