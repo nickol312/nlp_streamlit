@@ -19,7 +19,7 @@ trunc_type='post'
 padding_type='post'
 oov_tok = "<OOV>"
 
-model = load_model(r'model/my_model.h5')
+model = load_model('Model/my_model.h5')
 
 def welcome():
     return "Welcome All"
