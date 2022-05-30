@@ -1,4 +1,3 @@
 pandas==1.3.5
 numpy==1.21.6
 tensorflow==2.9.0
-protoc==3.19.0
