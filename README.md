@@ -1,1 +1,1 @@
-# Git for streamlit for NLP sentiment detection
+# Github for streamlit for NLP sentiment detection
