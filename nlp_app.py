@@ -32,7 +32,7 @@ def predict(sentence ,tokenizer, max_length, padding_type, trunc_type):
     
 def main():
     st.title("NLP Sentiment Recognition")
-    sente = st.text_area('Text to analyze',"Type Here")
+    sente = st.text_area('Text to analyze',placeholder="Type Here")
     sentence = [sente]
     result=""
     
